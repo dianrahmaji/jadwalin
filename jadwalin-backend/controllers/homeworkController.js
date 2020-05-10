@@ -23,7 +23,6 @@ async function addHomework(req, res, next) {
     })
   } catch(err) {
     res.status(500).json({ message: 'error server' });
-    console.log(err);
   }
 }
 
