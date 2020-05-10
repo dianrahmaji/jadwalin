@@ -276,7 +276,7 @@ export default {
         const token = jwt.decode(this.$store.getters.token);
         const userID = token.userToken.id;
 
-        const result = await axios.post('http://localhost:3000/homework/add', {
+        const result = await axios.post('https://jadwalin-backend.herokuapp.com/homework/add', {
           course: this.input.course,
           title: this.input.title,
           difficulty: this.input.difficulty,
@@ -299,7 +299,7 @@ export default {
      try {
         const token = jwt.decode(this.$store.getters.token);
         const userID = token.userToken.id;
-        const result = await axios.get(`http://localhost:3000/homework/get/${userID}`);
+        const result = await axios.get(`https://jadwalin-backend.herokuapp.com/homework/get/${userID}`);
 
         const homeworks = result.data.homework;
         this.homeworks = homeworks.map((homework) => {
@@ -318,7 +318,7 @@ export default {
     },
     async markAsDone(id) {
       try {
-        const result = await axios.put(`http://localhost:3000/homework/done/${id}`)
+        const result = await axios.put(`https://jadwalin-backend.herokuapp.com/homework/done/${id}`)
         console.log(result);
         // this.$forceUpdate();
         this.$router.go();
@@ -328,7 +328,7 @@ export default {
     },
     async deleteHomework(id) {
       try {
-        const result = await axios.delete(`http://localhost:3000/homework/delete/${id}`)
+        const result = await axios.delete(`https://jadwalin-backend.herokuapp.com/homework/delete/${id}`)
         console.log(result)
         // this.$forceUpdate();
         this.$router.go();

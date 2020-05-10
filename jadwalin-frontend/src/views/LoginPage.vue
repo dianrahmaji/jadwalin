@@ -58,7 +58,7 @@ export default {
   methods: {
     async Login() {
       try {
-        const result = await axios.post('http://localhost:3000/user/login', {
+        const result = await axios.post('https://jadwalin-backend.herokuapp.com/user/login', {
           username: this.input.username,
           password: this.input.password,
         });
