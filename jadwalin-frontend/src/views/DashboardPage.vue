@@ -3,7 +3,7 @@
     <base-appbar></base-appbar>
     <v-container class="my-5">
       <v-row wrap class="mb-3">
-        <v-col cols="3" md="2">
+        <v-col cols="2">
           <v-tooltip top>
             <template v-slot:activator="{ on }">
               <v-btn small text color="deep-purple accent-4" v-on="on" @click="sortBy('title')">
@@ -14,7 +14,7 @@
             <span>Sort homeworks by name</span>
           </v-tooltip>
         </v-col>
-        <v-col cols="3" md="2">
+        <v-col cols="2">
           <v-tooltip top>
             <template v-slot:activator="{ on }">
               <v-btn small text color="deep-purple accent-4" v-on="on" @click="sortBy('course')">
@@ -25,7 +25,7 @@
             <span>Sort homeworks by course</span>
           </v-tooltip>
         </v-col>
-        <v-col cols="3" md="2">
+        <v-col cols="2">
           <v-tooltip top>
             <template v-slot:activator="{ on }">
               <v-btn small text color="deep-purple accent-4" v-on="on" @click="sortBy('dueDate')">
@@ -36,7 +36,7 @@
             <span>Sort homeworks by due date</span>
           </v-tooltip>
         </v-col>
-        <v-col cols="3" md="2">
+        <v-col cols="2">
           <v-tooltip top>
             <template v-slot:activator="{ on }">
               <v-btn
@@ -52,7 +52,7 @@
             <span>Sort homeworks by difficulty</span>
           </v-tooltip>
         </v-col>
-        <v-col cols="3" md="2">
+        <v-col cols="2">
           <v-tooltip top>
             <template v-slot:activator="{ on }">
               <v-btn
