@@ -19,6 +19,7 @@
                     <v-text-field
                     v-model="input.password"
                     label="Password"
+                    type="password"
                     required
                     color="deep-purple accent-4"
                     ></v-text-field>
