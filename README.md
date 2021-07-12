@@ -1,2 +1,2 @@
 # jadwalin
-Enhanced Todo List App build with React and Nodejs
+Enhanced Todo List App build with Vue and Nodejs
